@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    Found CouchDB v<span id="version"></span> running at<br/>
+    <a href="" id="url" target="_blank"></a>
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.ba-bbq.min.js"></script>
+    <script>
+    $(function() {
+      var opts = $.deparam.querystring();
+
+      $('#version').text(opts.ver);
+
+      $('#url').attr('href', opts.url).text(opts.url);
+    });
+    </script>
+  </body>
+</html>

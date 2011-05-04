@@ -1,0 +1,15 @@
+{
+  "name": "Futon Finder",
+  "version": "1.0",
+  "description": "Tries to find a running instance of CouchDB for any given page.",
+  "content_scripts": [{
+      "matches": ["http://*/*"],
+      "js": ["context.js"]
+  }],
+  "permissions": [
+    "http://*/*",
+    "notifications",
+    "tabs"
+  ],
+  "background_page": "background.html"
+}
