@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+    div { float: left; margin-right: 10px; }
+    </style>
   <body>
-    Found CouchDB v<span id="version"></span> running at<br/>
-    <a href="" id="url" target="_blank"></a>
+    <div><img src="couchdb-icon-64px.png"/></div>
+
+    <p>
+      Found CouchDB v<span id="version"></span> running at <a href="" id="url" target="_blank"></a>
+
+    <p>
+      (<a href="" id="futon" target="_blank">Futon</a>)
 
     <script src="jquery.min.js"></script>
     <script src="jquery.ba-bbq.min.js"></script>
@@ -13,6 +22,12 @@
       $('#version').text(opts.ver);
 
       $('#url').attr('href', opts.url).text(opts.url);
+
+      $('#futon').attr('href', opts.url+'/_utils');
+
+      $('a').click(function() {
+        window.close();
+      });
     });
     </script>
   </body>
