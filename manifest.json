@@ -2,6 +2,7 @@
   "name": "Futon Finder",
   "version": "1.0",
   "description": "Tries to find a running instance of CouchDB for any given page.",
+  "homepage_url": "https://www.github.com/sbisbee/futonFinder",
   "content_scripts": [{
       "matches": ["http://*/*"],
       "js": ["context.js"]
@@ -11,5 +12,6 @@
     "notifications",
     "tabs"
   ],
-  "background_page": "background.html"
+  "background_page": "background.html",
+  "icons": { "48": "icon-48px.png" }
 }
