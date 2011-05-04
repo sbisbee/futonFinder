@@ -1,0 +1,25 @@
+Futon Finder
+============
+
+Version 1.0-UNRELEASED
+
+Currently only meant for developers.
+
+Futon Finder is a Chrome Extension that checks the domains you are browsing to
+see if there is a running instance of CouchDB on port 5984. For example, if you
+are at http://www.example.com then the extension will attempt an AJAX call to
+http://www.example.com:5984. If there is a valid response it will pop up a
+desktop notification.
+
+Dependencies
+------------
+
+jQuery          Used for AJAX and the desktop notification.
+
+jQuery.bbq      Used in the desktop notification for parsing the query string.
+
+License
+-------
+
+Futon Finder is released under the Apache License, version 2.0. See the file
+named LICENSE for more information.
