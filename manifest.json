@@ -13,5 +13,9 @@
     "tabs"
   ],
   "background_page": "background.html",
-  "icons": { "48": "icon-48px.png" }
+  "icons": { 
+    "16": "icon-16px.png",
+    "48": "icon-48px.png",
+    "128": "icon-128px.png"
+  }
 }
